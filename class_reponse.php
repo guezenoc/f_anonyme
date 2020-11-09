@@ -12,7 +12,7 @@ class Reponses extends Message {
     public $message;
     public $date;
     public $id_reponse;
-    private $ip_user;
+    public $ip_user;
   
     // Fonction __construct
     public function __construct($id, $titre, $message, $date, $IP_user, $ID_reponse)
