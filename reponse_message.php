@@ -43,7 +43,7 @@ $stmt->close();
 <body>
     <h2><?= $message->date->date?></h2>
     <h3><?= $message->titre?></h3>
-    <h3><?= $message->contenu?></h3>
+    <h4><?= $message->contenu?></h4>
     
         
 </body>
