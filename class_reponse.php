@@ -1,9 +1,9 @@
 <?php
-
+// connexion à la bdd
 require_once "class_singleton.php";
 $lien_bdd = db_connect::construit("localhost","root","","f_anonyme");
 
-class Reponses {
+class Reponses extends Message {
 //extends Messages 
 
     // Attributs de la class
