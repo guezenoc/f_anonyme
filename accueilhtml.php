@@ -32,11 +32,11 @@
     </script>
         <ul id="$messages"></ul>
 
-        <h2>affichage des messages</h2>
-        <ul>
+        <tr>
+            <td><h2><a href="affichage_message.php">afficher les messages</a></h2></td>
+        </tr>
+
+        
             
-            
-        </ul>
-    
 </body>
 </html>
