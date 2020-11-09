@@ -9,21 +9,21 @@ class Reponse {
     // Attributs de la class
     public $id;
     public $titre;
-    public $message;
+    public $contenu;
     public $date;
     public $id_reponse;
     public $ip_user;
   
     // Fonction __construct
-    public function __construct($id, $titre, $message, $date, $IP_user, $ID_reponse)
+    public function __construct($id, $titre, $contenu, $date, $ip_user, $id_reponse)
     {
         $this->id_reponse=$id_reponse;
     }
   
     // On modifie la fonction constructeur
-    public static function construit_reponse($id, $titre, $message, $date, $ip_user, $id_reponse) {
+    public static function construit_reponse($id, $titre, $contenu, $date, $ip_user, $id_reponse) {
       // On fait appel au constructeur
-      $reponse = new Reponse($id, $titre, $message, $date, $ip_user, $id_reponse);
+      $reponse = new Reponse($id, $titre, $contenu, $date, $ip_user, $id_reponse);
       $reponse->date = new DateTime($date);
     }
 
