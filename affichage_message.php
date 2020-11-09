@@ -48,8 +48,10 @@ $stmt->close();
             <td><?=$messages[$i]->date->format("Y-m-d")?></td>
             <td><?=$messages[$i]->titre?></td>
             <td><?=nl2br($messages[$i]->contenu)?></td>
-            <td><a href="affichage_message.php?id=<?=$messages[$i]->id?>">repondre au message</a></td>
+            <td><a href="reponse_message.php?id=<?=$messages[$i]->id?>">repondre au message</a></td>
         </tr>
+            
+        
         <?php
         }
         ?>

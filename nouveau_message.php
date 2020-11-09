@@ -26,7 +26,7 @@ $stmt->execute();
 $stmt->close();
 //fin de l'insertion 
 
-//recuperation du message dans la base de donnnées
+
 
 
 
