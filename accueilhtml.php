@@ -30,7 +30,13 @@
         });
         
     </script>
-        <ul id="messages"></ul>
+        <ul id="$messages"></ul>
+
+        <h2>affichage des messages</h2>
+        <ul>
+            
+            
+        </ul>
     
 </body>
 </html>

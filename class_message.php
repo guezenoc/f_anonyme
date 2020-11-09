@@ -44,7 +44,7 @@ class Message {
   $reponses = array();
 
   //On récupère les réponses
-  $requeteMessage = "SELECT message.id, titre, contenu, date, message.ip_user, message.ip_reponse FROM message WHERE message.ip_reponse = ?";
+  $requeteMessage = "SELECT message.id, titre, contenu, date, message.ip_user, message.id_reponse FROM message WHERE message.id_reponse = ?";
   // Preparation de la requete
   $stmt = $db->connexion->prepare($requeteMessage);
   // On bind le paramètre ID
@@ -59,10 +59,9 @@ class Message {
     $reponses[] = Reponse::construit_reponse($id, $titre, $contenu, $date, $statut, $ip_user, $id_reponse);
   }
   // On renvoie les résultats avec le json_encode
-  echo json_encode($reponses);
+  return $reponses;
   // On clos le statement
   $stmt->close();
 
   }
-
 }

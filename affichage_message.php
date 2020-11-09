@@ -1,8 +1,8 @@
 <?php
-
 require_once "class_singleton.php";
 $lien_bdd = db_connect::construit("localhost","root","","f_anonyme");
 require_once "class_message.php";
+
 //declaration des variables 
 $messages= array();
 

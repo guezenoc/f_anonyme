@@ -3,7 +3,7 @@
 require_once "class_singleton.php";
 $lien_bdd = db_connect::construit("localhost","root","","f_anonyme");
 
-class Reponses extends Message {
+class Reponse {
 //extends Messages 
 
     // Attributs de la class
